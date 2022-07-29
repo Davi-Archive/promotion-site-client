@@ -1,4 +1,4 @@
-form{
+form {
     width: 45%;
     align-items: center;
     margin-left: 27%;
@@ -6,30 +6,75 @@ form{
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 5%;
 }
-table{
+
+table {
     width: 70%;
 }
 
-.botao-enviar{
-   font-weight: 600;
-   font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.2rem;
+.botao-enviar {
+    font-weight: 600;
+    font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
 }
 
-.tabela-topo{
+.tabela-topo {
     font-weight: 900;
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.tabela-descricao{
+.tabela-descricao {
     font-size: 0.9rem;
 }
 
-table{
+table {
     width: 100%;
 }
 
-th, td{
+th, td {
     border: blue solid 1px;
     padding: 0.6rem;
+}
+
+
+.inserir{
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+
+.texto-input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+/* botao select */
+
+#classificacao option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+#classificacao option[value="vazio"] {
+    background: rgb(255, 255, 255);
+}
+
+#classificacao option[value="valor1"] {
+    background: rgba(22, 22, 22, 0.76);
+}
+
+#classificacao option[value="valor2"] {
+    background: rgba(24, 24, 24, 0.884);
+}
+
+#classificacao option[value="valor3"] {
+    background: rgba(22, 22, 22, 0.76);
+}
+
+#classificacao option[value="valor4"] {
+    background: rgba(24, 24, 24, 0.884);
 }
