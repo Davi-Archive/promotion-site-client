@@ -5,8 +5,8 @@ export default function Formulario() {
 
         <form>
             <div>
-                <h1 className='text-center font-extrabold text-3xl mb-5'>CADASTRE-SE</h1>
-                <h2 className='text-center font-extrabold text-m'>Preencha os campos abaixo para validar sua participação <br /> na campanha e concorrer aos prêmios.</h2>
+                <h1 className='tabela-topo text-center font-extrabold text-3xl mb-5'>CADASTRE-SE</h1>
+                <h2 className='tabela-descricao text-center font-extrabold text-m'>Preencha os campos abaixo para validar sua participação <br /> na campanha e concorrer aos prêmios.</h2>
                 <table>
                     <tr>
                         <th colspan='2'><p className='flex flex-col text-left'>Nome: <input placeholder='Nome'></input></p></th>
@@ -31,18 +31,15 @@ export default function Formulario() {
                     <tr>
                         <th colspan='2'>
                             <button
-                                className={`botao-enviar
-                            border-amber-500
-                            border-1
-                            rounded-md
-                            bg-amber-500
+                                className={`
+                            botao-enviar
                             botao-campanha
-                            mr-5
-                            items-center
+                            border-amber-600
+                            rounded-md
+                            bg-amber-600
                             text-center
                             text-white
                             font-bold
-                            justify-center
                             `}
                                 type='submit'>Enviar</button></th>
                     </tr>
