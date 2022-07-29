@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../assets/Lato/Lato-Bold.ttf');
+  }
+
+.botao-campanha{
+    width: 7rem;
+    text-align: center;
+    line-height: 37px;
+    font-size: 0.9rem;
+    font-family: 'Lato-Bold' ,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.botao-campanha:hover{
+    color: black;
+    background-color: brown;
+}
+.botao-campanha:focus{
+    color: black;
+    background-color: brown;
+}

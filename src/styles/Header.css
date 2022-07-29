@@ -1,0 +1,23 @@
+.imagem-mundo{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width:640px;
+    height: auto;
+}
+
+.texto-campanha{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 220px;
+    height: auto;
+}
+
+.botoes-campanha{
+    position: absolute;
+    display: flex;
+    bottom: -5%;
+    align-items: center;
+    text-align: center;
+}

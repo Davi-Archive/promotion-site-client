@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Lato;
+    src: url('../assets/Lato/Lato-Regular.ttf');
+  }
+
+form{
+    width: 45%;
+    align-items: center;
+    margin-left: 27%;
+    color: #fff;
+    font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table{
+
+    width: 70%;
+}
+
+th{
+    width: 50%;
+}
+
+
+h1{
+    font-weight: 600;
+}
+
+table{
+    width: 100%;
+    background-color: red;
+}
+
+tr, td, caption{
+    width: 50%;
+    border: blue solid 1px;
+    /* align-items: center; */
+}
