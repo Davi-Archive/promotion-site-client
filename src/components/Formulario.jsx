@@ -1,4 +1,5 @@
 import '../styles/Formulario.css'
+
 export default function Formulario() {
     return (
 
@@ -8,24 +9,37 @@ export default function Formulario() {
                 <h2 className='text-center font-extrabold text-m'>Preencha os campos abaixo para validar sua participação <br /> na campanha e concorrer aos prêmios.</h2>
                 <table>
                     <tr>
-                        <th><p className='text-center'>Hippopotamus</p></th>
+                        <th colspan='2'><p className='flex flex-col text-left'>Nome: <input placeholder='Nome'></input></p></th>
                     </tr>
                     <tr>
-                        <td>Horse</td>
-                        <td>Mare</td>
+                        <td><p className='flex flex-col text-left'>CPF: <input placeholder='000.000.000-00'></input></p></td>
+                        <td><p className='flex flex-col text-left'>E-mail: <input placeholder='E-mail'></input></p></td>
                     </tr>
                     <tr>
-                        <td>Stallion</td>
+                        <td><p className='flex flex-col text-left'>Senha: <input placeholder='Senha'></input></p></td>
+                        <td><p className='flex flex-col text-left'>Senha: <input placeholder='Nome'></input></p></td>
                     </tr>
                     <tr>
-                        <th>Crocodile</th>
+                        <td><p className='flex flex-col text-left'>Empresa: <input placeholder='Empresa'></input></p></td>
+                        <td><p className='flex flex-col text-left'>Classificação: <input placeholder='Escolha sua categoria'></input></p></td>
                     </tr>
                     <tr>
-                        <th>Chicken</th>
-                        <td>Hen</td>
-                    </tr>
-                    <tr>
-                        <td>Rooster</td>
+                        <th colspan='2'>
+                            <button
+                            className={`botao-enviar
+                            border-amber-500
+                            border-1
+                            rounded-md
+                            bg-amber-500
+                            botao-campanha
+                            mr-5
+                            items-center
+                            text-center
+                            text-white
+                            font-bold
+                            justify-center
+                            `}
+                            type='submit'>Enviar</button></th>
                     </tr>
                 </table>
             </div>

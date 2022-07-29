@@ -3,22 +3,26 @@
     src: url('../assets/Lato/Lato-Regular.ttf');
   }
 
+@font-face {
+    font-family: Lato-Black;
+    src: url('../assets/Lato/Lato-Black.ttf');
+}
+
 form{
     width: 45%;
     align-items: center;
     margin-left: 27%;
     color: #fff;
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5%;
 }
 table{
-
     width: 70%;
 }
 
-th{
-    width: 50%;
+.botao-enviar{
+   font-family: 'Lato-Black', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 h1{
     font-weight: 600;
@@ -26,11 +30,10 @@ h1{
 
 table{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
-tr, td, caption{
-    width: 50%;
+th, td{
     border: blue solid 1px;
-    /* align-items: center; */
+    padding: 0.6rem;
 }
