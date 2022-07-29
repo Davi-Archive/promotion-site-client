@@ -24,6 +24,6 @@
 
 @media screen and (max-height: 500px) {
   .body-header{
-      min-height: 600px;
+      min-height: 500px;
   }
 }

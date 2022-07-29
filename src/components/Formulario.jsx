@@ -34,9 +34,9 @@ export default function Formulario() {
                                 className={`
                             botao-enviar
                             botao-campanha
-                            border-amber-600
+                            border-amber-500
+                            bg-amber-500
                             rounded-md
-                            bg-amber-600
                             text-center
                             text-white
                             font-bold
