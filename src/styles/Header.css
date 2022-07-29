@@ -2,8 +2,9 @@
     position: absolute;
     top: 5%;
     left: 35%;
-    width:640px;
+    width: 600px;
     height: auto;
+    z-index: 0;
 }
 
 .texto-campanha{
@@ -20,4 +21,31 @@
     bottom: -5%;
     align-items: center;
     text-align: center;
+}
+
+@media screen and (max-height: 600px) {
+    .imagem-mundo{
+        top: 0%;
+        width: 400px;
+        height: auto;
+    }
+    .texto-campanha{
+        top: 5%;
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imagem-mundo{
+        top: 0%;
+        left: 35%;
+        width: 400px;
+        height: auto;
+    }
+    .texto-campanha{
+        left: 0%;
+        width: 180px;
+        height: auto;
+    }
 }

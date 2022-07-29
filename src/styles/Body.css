@@ -1,9 +1,11 @@
 .body-header{
   width: 100%;
+  min-height: 500px;
   height: 100vh;
   background-image: url('../assets/background.png');
   background-repeat: no-repeat;
   background-size:cover;
+  z-index: -1;
 }
 .body-main{
   background-image: url('../assets/background-marrom.png');
@@ -11,10 +13,17 @@
   min-height: 300px;
   background-size:cover;
   padding-top: 2%;
+  z-index: 3;
 }
 .body-bottom{
   background-image: url('../assets/background-cinza.png');
   background-repeat: repeat-y;
   min-height: 300px;
 
+}
+
+@media screen and (max-height: 500px) {
+  .body-header{
+      min-height: 600px;
+  }
 }

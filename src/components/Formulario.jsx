@@ -21,12 +21,17 @@ export default function Formulario() {
                     </tr>
                     <tr>
                         <td><p className='flex flex-col text-left'>Empresa: <input placeholder='Empresa'></input></p></td>
-                        <td><p className='flex flex-col text-left'>Classificação: <input placeholder='Escolha sua categoria'></input></p></td>
+                        <td><p className='flex flex-col text-left'>Classificação:
+                            <select name="select">
+                                <option value="valor1">Valor 1</option>
+                                <option value="valor2" selected>Valor 2</option>
+                                <option value="valor3">Valor 3</option>
+                            </select></p></td>
                     </tr>
                     <tr>
                         <th colspan='2'>
                             <button
-                            className={`botao-enviar
+                                className={`botao-enviar
                             border-amber-500
                             border-1
                             rounded-md
@@ -39,7 +44,7 @@ export default function Formulario() {
                             font-bold
                             justify-center
                             `}
-                            type='submit'>Enviar</button></th>
+                                type='submit'>Enviar</button></th>
                     </tr>
                 </table>
             </div>
