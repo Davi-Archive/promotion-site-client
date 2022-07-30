@@ -31,7 +31,6 @@ table {
 }
 
 th, td {
-    border: blue solid 1px;
     padding: 0.6rem;
 }
 
@@ -40,6 +39,11 @@ th, td {
     border-bottom: 2px solid white;
     background-color: transparent;
 }
+
+.inserir::placeholder{
+    color:#ffffff;
+}
+
 
 .texto-input{
     display: flex;
@@ -50,6 +54,10 @@ th, td {
 
 
 /* botao select */
+
+#classificacao{
+    width: 100%;
+}
 
 #classificacao option {
     margin: 40px;
@@ -64,17 +72,17 @@ th, td {
 }
 
 #classificacao option[value="valor1"] {
-    background: #161616c2;
+    background: #f59e0b;
 }
 
 #classificacao option[value="valor2"] {
-    background: #181818e1;
+    background: #d97706;
 }
 
 #classificacao option[value="valor3"] {
-    background: #161616c2;
+    background: #f59e0b;
 }
 
 #classificacao option[value="valor4"] {
-    background: #181818e1;
+    background: #d97706;
 }

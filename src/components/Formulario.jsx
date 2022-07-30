@@ -13,32 +13,83 @@ export default function Formulario() {
                     <tr>
                         <td colspan='2'>
                             <p className='texto-input'>
-                                <span>Nome: </span>
-                                <input className='inserir' placeholder='Nome'></input>
+                                <span className='text-sm'>Nome: </span>
+                                <input
+                                className='inserir'
+                                placeholder='Nome'
+                                maxlength="150"
+                                required
+                                ></input>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td><p className='texto-input'>CPF:
-                            <input className='inserir' placeholder='000.000.000-00'></input></p>
+                        <td><p className='texto-input'>
+                            <span className='text-sm'>CPF:</span>
+                            <input
+                            type='text'
+                            className='inserir'
+                            placeholder='000.000.000-00'
+                            pattern='\d{3}\.?\d{3}\.?\d{3}-?\d{2}'
+                            maxlength="14"
+                            minLength="11"
+                            required
+                            ></input>
+                            </p>
                         </td>
-                        <td><p className='texto-input'>E-mail:
-                        <input className='inserir' placeholder='E-mail'></input></p>
+                        <td>
+                        <p className='texto-input'>
+                        <span className='text-sm'>E-mail:</span>
+                        <input
+                        className='inserir'
+                        placeholder='E-mail'
+                        type='email'
+                        maxlength="200"
+                        required
+                        ></input></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p className='texto-input'>Senha: <input className='inserir' placeholder='Senha'></input></p>
+                            <p className='texto-input'>
+                            <span className='text-sm'>Senha:</span>
+                            <input
+                            className='inserir'
+                            placeholder='Senha'
+                            type="password"
+                            minLength='8'
+                            maxLength='50'
+                            pattern="(?=.*[a-z])(?=.*[0-9])(?=.*\W+)(?=^.{8,50}$).*$"
+                            required
+                            ></input></p>
                         </td>
                         <td>
-                            <p className='texto-input'>Senha:
-                            <input className='inserir' placeholder='Nome'></input>
+                            <p className='texto-input'>
+                            <span className='text-sm'>Senha:</span>
+                            <input
+                            className='inserir'
+                            placeholder='Confirme sua Senha'
+                            type='password'
+                            pattern='/(?=.*[a-z])(?=.*[0-9])(?=.*[@-#-$])(?=^.{8,50}$).*$/'
+                            required
+                            ></input>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td><p className='texto-input'>Empresa: <input className='inserir' placeholder='Empresa'></input></p></td>
-                        <td><p className='texto-input'>Classificação:</p>
+                        <td>
+                            <p className='texto-input'>Empresa:
+                                <input
+                                className='inserir'
+                                placeholder='Empresa'
+                                type='text'
+                                maxlength="150"
+                                required
+                                ></input>
+                            </p>
+                        </td>
+                        <td><p className='texto-input'>
+                            <span className='text-sm'>Classificação:</span></p>
                             <select name="select" id='classificacao' className='inserir pr-5'>
                                     <option value="vazio" disabled selected>Escolha sua Categoria</option>
                                     <option value="valor1">Valor 1</option>

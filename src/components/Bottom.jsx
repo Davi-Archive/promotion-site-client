@@ -24,10 +24,10 @@ export default function Bottom(){
                 <p>Não fazemos nenhuma representação ou garantia em relação a produtos ou serviços de terceiros.
                 Outros nomes de empresas, produtos
                 </p>
-                <p>e serviços podem ser marcas registradas ou marcas de serviço de terceiros &copy; 2020.
+        </div>
+                <p className='last-texto-informativo'>e serviços podem ser marcas registradas ou marcas de serviço de terceiros &copy; 2020.
                 Todos os direitos reservados.
                 </p>
-        </div>
         </div>
         <div className='bottom-logo'>
             <Logo></Logo>

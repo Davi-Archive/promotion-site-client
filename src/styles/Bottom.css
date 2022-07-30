@@ -19,8 +19,12 @@
 }
 
 .texto-informativo {
+    text-align-last: justify;
+}
+
+.texto-informativo,
+.last-texto-informativo{
     display: inline-block;
     font-size: 0.55rem;
     line-height: 0.8rem;
-    text-align-last: justify;
 }
