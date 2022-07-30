@@ -55,11 +55,11 @@ th, td {
 
 /* botao select */
 
-#classificacao{
+#segment{
     width: 100%;
 }
 
-#classificacao option {
+#segment option {
     margin: 40px;
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
@@ -67,22 +67,22 @@ th, td {
 }
 
 
-#classificacao option[value="vazio"] {
+#segment option[value="vazio"] {
     background: #ffffff;
 }
 
-#classificacao option[value="valor1"] {
+#segment option[value="valor1"] {
     background: #f59e0b;
 }
 
-#classificacao option[value="valor2"] {
+#segment option[value="valor2"] {
     background: #d97706;
 }
 
-#classificacao option[value="valor3"] {
+#segment option[value="valor3"] {
     background: #f59e0b;
 }
 
-#classificacao option[value="valor4"] {
+#segment option[value="valor4"] {
     background: #d97706;
 }

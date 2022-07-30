@@ -2,6 +2,20 @@ import React from "react"
 import '../styles/Botao.css'
 
 export default function Botao(props){
+
+    /* <button
+                                className={`
+                            botao-enviar
+                            botao-campanha
+                            border-amber-500
+                            bg-amber-500
+                            rounded-md
+                            text-center
+                            text-white
+                            font-bold
+                            `}
+                                type='submit'>Enviar</button> */
+
     return (
         <div className='
         botao-campanha
@@ -15,7 +29,7 @@ export default function Botao(props){
         font-bold
         justify-center
         '>
-        <button>{props.texto}</button>
+        <button onClick={props.onClick} type={props.type}>{props.texto}</button>
         </div>
     )
 }

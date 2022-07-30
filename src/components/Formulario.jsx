@@ -1,9 +1,8 @@
 import '../styles/Formulario.css'
 
-export default function Formulario() {
+export default function Formulario(props) {
     return (
-
-        <form>
+        <form action='api.teste-frontend.ateliedepropaganda.com.br/v1/register' method='POST'>
             <div>
                 <h1 className='tabela-topo text-center font-extrabold text-3xl mb-5'>CADASTRE-SE</h1>
                 <h2 className='tabela-descricao text-center font-extrabold text-m'>
@@ -15,6 +14,7 @@ export default function Formulario() {
                             <p className='texto-input'>
                                 <span className='text-sm'>Nome: </span>
                                 <input
+                                id='name'
                                 className='inserir'
                                 placeholder='Nome'
                                 maxlength="150"
@@ -27,6 +27,7 @@ export default function Formulario() {
                         <td><p className='texto-input'>
                             <span className='text-sm'>CPF:</span>
                             <input
+                            id='tax_id'
                             type='text'
                             className='inserir'
                             placeholder='000.000.000-00'
@@ -41,6 +42,7 @@ export default function Formulario() {
                         <p className='texto-input'>
                         <span className='text-sm'>E-mail:</span>
                         <input
+                        id='email'
                         className='inserir'
                         placeholder='E-mail'
                         type='email'
@@ -54,12 +56,12 @@ export default function Formulario() {
                             <p className='texto-input'>
                             <span className='text-sm'>Senha:</span>
                             <input
+                            id='password'
                             className='inserir'
                             placeholder='Senha'
                             type="password"
-                            minLength='8'
+                            minLength='6'
                             maxLength='50'
-                            pattern="(?=.*[a-z])(?=.*[0-9])(?=.*\W+)(?=^.{8,50}$).*$"
                             required
                             ></input></p>
                         </td>
@@ -67,10 +69,12 @@ export default function Formulario() {
                             <p className='texto-input'>
                             <span className='text-sm'>Senha:</span>
                             <input
+                            id='password_confirmation'
                             className='inserir'
                             placeholder='Confirme sua Senha'
                             type='password'
-                            pattern='/(?=.*[a-z])(?=.*[0-9])(?=.*[@-#-$])(?=^.{8,50}$).*$/'
+                            minLength='6'
+                            maxLength='50'
                             required
                             ></input>
                             </p>
@@ -80,6 +84,7 @@ export default function Formulario() {
                         <td>
                             <p className='texto-input'>Empresa:
                                 <input
+                                id='company'
                                 className='inserir'
                                 placeholder='Empresa'
                                 type='text'
@@ -90,29 +95,18 @@ export default function Formulario() {
                         </td>
                         <td><p className='texto-input'>
                             <span className='text-sm'>Classificação:</span></p>
-                            <select name="select" id='classificacao' className='inserir pr-5'>
+                            <select name="select" id='segment' className='inserir pr-5'>
                                     <option value="vazio" disabled selected>Escolha sua Categoria</option>
-                                    <option value="valor1">Valor 1</option>
-                                    <option value="valor2">Valor 2</option>
-                                    <option value="valor3">Valor 3</option>
-                                    <option value="valor4">Valor 3</option>
+                                    <option value="valor1">Gerente</option>
+                                    <option value="valor2">Revendedor</option>
+                                    <option value="valor3">Distribuidor</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <th colspan='2'>
-                            <button
-                                className={`
-                            botao-enviar
-                            botao-campanha
-                            border-amber-500
-                            bg-amber-500
-                            rounded-md
-                            text-center
-                            text-white
-                            font-bold
-                            `}
-                                type='submit'>Enviar</button></th>
+                            {props.children}
+                        </th>
                     </tr>
                 </table>
             </div>
