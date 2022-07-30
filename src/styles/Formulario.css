@@ -60,21 +60,21 @@ th, td {
 
 
 #classificacao option[value="vazio"] {
-    background: rgb(255, 255, 255);
+    background: #ffffff;
 }
 
 #classificacao option[value="valor1"] {
-    background: rgba(22, 22, 22, 0.76);
+    background: #161616c2;
 }
 
 #classificacao option[value="valor2"] {
-    background: rgba(24, 24, 24, 0.884);
+    background: #181818e1;
 }
 
 #classificacao option[value="valor3"] {
-    background: rgba(22, 22, 22, 0.76);
+    background: #161616c2;
 }
 
 #classificacao option[value="valor4"] {
-    background: rgba(24, 24, 24, 0.884);
+    background: #181818e1;
 }

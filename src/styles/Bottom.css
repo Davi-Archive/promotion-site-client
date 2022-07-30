@@ -1,0 +1,26 @@
+.bottom{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    justify-content: justify;
+    padding-top: 5%;
+    padding-left: 20%;
+    color:#4e4e4e;
+    width: 60%;
+
+}
+
+.bottom-logo{
+    flex-direction: row;
+    display: flex;
+    margin-top: -15%;
+    margin-left: 63%;
+    width: 180px;
+}
+
+.texto-informativo {
+    display: inline-block;
+    font-size: 0.55rem;
+    line-height: 0.8rem;
+    text-align-last: justify;
+}

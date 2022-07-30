@@ -1,4 +1,19 @@
-.footer{
-    width: 100%;
-    height: 10%;
+.barra-final{
+    display: flex;
+    background-color: #f59e0b;
+    padding: 7px;
+}
+
+.duvidas,
+.imagens-ilustrativas-texto{
+    margin-top: 4px;
+    font-size: 0.8rem;
+}
+
+.duvidas{
+    margin-left: 17%;
+}
+
+.imagens-ilustrativas-texto{
+    margin-left: 13%;
 }
