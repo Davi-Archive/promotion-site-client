@@ -1,6 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 .body-header{
   width: 100%;
-  min-height: 500px;
+  min-height: 32em;
   height: 100vh;
   background-image: url('../assets/background.png');
   background-repeat: no-repeat;
@@ -10,7 +16,7 @@
 .body-main{
   background-image: url('../assets/background-marrom.png');
   background-repeat: repeat-y;
-  min-height: 300px;
+  min-height: 19em;
   background-size:cover;
   padding-top: 2%;
   z-index: 3;
@@ -18,18 +24,18 @@
 .body-bottom{
   background-image: url('../assets/background-cinza.png');
   background-repeat: repeat-y;
-  min-height: 300px;
+  min-height: 19em;
 
 }
 
-@media (max-height: 500px) {
+@media (max-height: 32em) {
   .body-header{
-      min-height: 500px;
+      min-height: 38em;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 38em) {
   .body-header{
-      min-height: 200px;
+      min-height: 13em;
       height: 60vh;
   }
 }
