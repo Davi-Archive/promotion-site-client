@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/atelie-frontend/static/css/main.7a67a092.css",
+    "main.js": "/atelie-frontend/static/js/main.1f45c816.js",
+    "static/js/787.c7869a7e.chunk.js": "/atelie-frontend/static/js/787.c7869a7e.chunk.js",
+    "static/media/background-marrom.png": "/atelie-frontend/static/media/background-marrom.a9aaa6f332ce92834856.png",
+    "static/media/clouds.png": "/atelie-frontend/static/media/clouds.88d7a71b005c8e33ac5e.png",
+    "static/media/background.png": "/atelie-frontend/static/media/background.cba1f066c7cf847d5231.png",
+    "static/media/Lato-Regular.ttf": "/atelie-frontend/static/media/Lato-Regular.80c07943565d91b976e1.ttf",
+    "static/media/Lato-Bold.ttf": "/atelie-frontend/static/media/Lato-Bold.bb154e8dcbf157f82e9b.ttf",
+    "static/media/Lato-Black.ttf": "/atelie-frontend/static/media/Lato-Black.f03c3fcad8a9b545ceee.ttf",
+    "static/media/background-cinza.png": "/atelie-frontend/static/media/background-cinza.f214ab8cd4389ff054cb.png",
+    "static/media/close.svg": "/atelie-frontend/static/media/close.5a9b87277912962c17aa6c1bf2b21502.svg",
+    "index.html": "/atelie-frontend/index.html",
+    "main.7a67a092.css.map": "/atelie-frontend/static/css/main.7a67a092.css.map",
+    "main.1f45c816.js.map": "/atelie-frontend/static/js/main.1f45c816.js.map",
+    "787.c7869a7e.chunk.js.map": "/atelie-frontend/static/js/787.c7869a7e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a67a092.css",
+    "static/js/main.1f45c816.js"
+  ]
+}
