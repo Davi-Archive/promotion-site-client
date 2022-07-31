@@ -11,36 +11,35 @@ import Botao from './components/Botao';
 
 export default function Main() {
 
-  let [visivel, setVisivel] = useState(0)
+  //renderiza seletivamente entre login e form
+  let [visivel, setVisivel] = useState({estaVisivel: true })
 
-   const handleClick = event => {
-      setVisivel(visivel + 1)
-      console.log(visivel)
+   function loginForm() {
+    setVisivel(false)
   }
-   const form = event => {
-    setVisivel(visivel = 1)
+  function formulario() {
+    setVisivel(true)
   }
-  const login = event => {
-    setVisivel(visivel = 2)
+  function entrarLogin(){    //para função de login ser implementada consultando banco de dados.
+    setVisivel(true)
   }
 
-//trocar login para formulario em 1 botão
 
   return (
 
     <>
     <div className="body-header">
     <Header>
-        <Botao texto='LOGIN' onClick={() => form()}></Botao>
-        <Botao texto='CADASTRE-SE' onClick={() => login()}></Botao>
+        <Botao texto='LOGIN' onClick={() => loginForm()} cor='600'></Botao>
+        <Botao texto='CADASTRE-SE' onClick={() => formulario()} cor='600'></Botao>
     </Header>
     </div>
     <div className='body-main'>
-     {visivel % 2 === 0 ? (
+     {visivel === true ? (
      <Formulario></Formulario>
      ) : (
      <Login>
-        <Botao texto='ENTRAR' onClick={() => handleClick()} type='submit'></Botao>
+        <Botao texto='ENTRAR' onClick={() => entrarLogin()} type='submit' cor='a500'></Botao>
      </Login>
      )
      }

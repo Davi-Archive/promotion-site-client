@@ -40,6 +40,13 @@ th, td {
     background-color: transparent;
 }
 
+.inserir-cpf{
+    border-bottom: 2px solid #f59e0b;
+    background-color: transparent;
+
+
+}
+
 .inserir::placeholder{
     color:#ffffff;
 }
