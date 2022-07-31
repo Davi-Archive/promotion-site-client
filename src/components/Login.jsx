@@ -9,7 +9,7 @@ export default function Login(props) {
                         <tbody>
                             <tr>
                                 <td><p className='texto-input'>
-                                    <span className='text-sm'>CPF:</span>
+                                    <span className='text-sm'>CPF</span>
                                     <input
                                         type='text'
                                         className='inserir'
@@ -25,7 +25,7 @@ export default function Login(props) {
                             <tr>
                                 <td>
                                     <p className='texto-input'>
-                                        <span className='text-sm'>Senha:</span>
+                                        <span className='text-sm'>Senha</span>
                                         <input
                                             className='inserir'
                                             placeholder='Senha'
