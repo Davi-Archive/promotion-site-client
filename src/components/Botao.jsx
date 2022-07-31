@@ -3,7 +3,7 @@ import '../styles/Botao.css'
 
 export default function Botao(props){
     return (
-        <div className='
+        <div className={`
         botao-campanha
         inline-flex
         border-amber-600
@@ -14,7 +14,7 @@ export default function Botao(props){
         text-white
         font-bold
         justify-center
-        '>
+        `}>
         <button onClick={props.onClick} type={props.type}>{props.texto}</button>
         </div>
     )
