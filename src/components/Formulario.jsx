@@ -6,7 +6,7 @@ import Dialog from './Dialog';
 
 
 export default function Formulario() {
-
+    // mensagem de aviso no centro da tela <Dialog />
     const [dialog, setDialog] = useState({
         isLoading: false,
     });
@@ -206,9 +206,9 @@ export default function Formulario() {
                     </table>
                 </div>
             </form>
+            {/* chama dialog para passar mensagem de sucesso ou erro */}
             {dialog.isLoading && (
                 <Dialog
-                    //Update
                     mensagem={message}
                     onDialog={handleDialog}
                 />
