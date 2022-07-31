@@ -55,11 +55,11 @@ th, td {
 
 /* botao select */
 
-#segment{
+.segment{
     width: 100%;
 }
 
-#segment option {
+.segment option {
     margin: 40px;
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
@@ -67,22 +67,18 @@ th, td {
 }
 
 
-#segment option[value="vazio"] {
+.segment option[value="vazio"] {
     background: #ffffff;
 }
 
-#segment option[value="valor1"] {
+.segment option[value="Manager"] {
     background: #f59e0b;
 }
 
-#segment option[value="valor2"] {
+.segment option[value="Reseller"] {
     background: #d97706;
 }
 
-#segment option[value="valor3"] {
+.segment option[value="Distributor"] {
     background: #f59e0b;
-}
-
-#segment option[value="valor4"] {
-    background: #d97706;
 }

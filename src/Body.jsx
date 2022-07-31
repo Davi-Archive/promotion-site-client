@@ -37,9 +37,7 @@ export default function Main() {
     </div>
     <div className='body-main'>
      {visivel % 2 === 0 ? (
-     <Formulario>
-        <Botao texto='ENVIAR' onClick={() => login()} type='submit'></Botao>
-     </Formulario>
+     <Formulario></Formulario>
      ) : (
      <Login>
         <Botao texto='ENTRAR' onClick={() => handleClick()} type='submit'></Botao>

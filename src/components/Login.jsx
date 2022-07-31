@@ -37,7 +37,7 @@ export default function Login(props) {
                         </td>
                     </tr>
                     <tr>
-                        <th colspan='2'>
+                        <th colSpan='2'>
                         {props.children}
                         </th>
                     </tr>
