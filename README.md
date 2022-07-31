@@ -1,4 +1,5 @@
-# Este projeto foi feito usando Reactjs DEMO: https://davi38.github.io/atelie-frontend/
+# Este projeto foi feito usando Reactjs, tailwindcss entre outros 
+# <p> DEMO: https://davi38.github.io/atelie-frontend/</p>
  para editar este projeto clone o mesmo com o Git em uma pasta em seu computador a partir do comando:
  <p><code> git clone https://github.com/davi38/atelie-frontend.git</code></p>
 
