@@ -43,6 +43,9 @@ export default function Formulario() {
                     company: company,
                     segment: segment,
                 }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
             });
             if (res.status === 200) {
                 if (password === password_confirmation) {
@@ -77,7 +80,7 @@ export default function Formulario() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='formulario-form'>
                 <div>
                     <h1 className='tabela-topo text-center font-extrabold text-3xl mb-5'>CADASTRE-SE</h1>
                     <h2 className='tabela-descricao text-center font-extrabold text-m'>
@@ -113,8 +116,8 @@ export default function Formulario() {
                                         minLength="11"
                                         required
                                     ></input>
-                                    <p className='text-xs text-amber-500'>Digite um CPF válido</p>
                                 </p>
+                                    <p className='texto-cpf text-xs text-amber-500'>Digite um CPF válido</p>
                                 </td>
                                 <td>
                                     <p className='texto-input'>
@@ -198,7 +201,7 @@ export default function Formulario() {
                             </tr>
                             <tr>
                                 <td>
-                                    <div className="message">{message ? <p>{message}</p> : null}
+                                    <div className="message">{message ? <p className='text-xs text-center'>{message}</p> : null}
                                     </div>
                                 </td>
                             </tr>

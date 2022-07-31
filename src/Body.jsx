@@ -7,21 +7,19 @@ import React, { useState } from "react";
 import Login from './components/Login';
 import Botao from './components/Botao';
 
-//trocar login para formulario em 1 botão
-
 export default function Main() {
 
-  //renderiza seletivamente entre login e form
-  let [visivel, setVisivel] = useState({estaVisivel: true })
+  //renderiza seletivamente entre login(false) e formulario(false)
+  let [visivel, setVisivel] = useState({visivel: true})
 
    function loginForm() {
-    setVisivel(false)
+    setVisivel(true)
   }
   function formulario() {
-    setVisivel(true)
+    setVisivel(false)
   }
   function entrarLogin(){    //para função de login ser implementada consultando banco de dados.
-    setVisivel(true)
+    setVisivel(false)
   }
 
 
@@ -36,12 +34,12 @@ export default function Main() {
     </div>
     <div className='body-main'>
      {visivel === true ? (
+      <Login>
+         <Botao texto='ENTRAR' onClick={() => entrarLogin()} type='submit' cor='a500'></Botao>
+      </Login>
+      ) : (
      <Formulario></Formulario>
-     ) : (
-     <Login>
-        <Botao texto='ENTRAR' onClick={() => entrarLogin()} type='submit' cor='a500'></Botao>
-     </Login>
-     )
+      )
      }
     </div>
     <div className='body-bottom'>

@@ -1,16 +1,16 @@
-.bottom{
+.bottom {
     display: flex;
     flex-direction: column;
     /* justify-content: left; */
     justify-content: justify;
     padding-top: 5%;
     padding-left: 20%;
-    color:#4e4e4e;
+    color: #4e4e4e;
     width: 60%;
 
 }
 
-.bottom-logo{
+.bottom-logo {
     flex-direction: row;
     display: flex;
     margin-top: -15%;
@@ -23,8 +23,29 @@
 }
 
 .texto-informativo,
-.last-texto-informativo{
+.last-texto-informativo {
     display: inline-block;
     font-size: 0.55rem;
     line-height: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .bottom-logo {
+        display: flex;
+        margin-top: -4%;
+        margin-left: 3%;
+        width: 180px;
+    }
+    .texto-informativo,
+    .last-texto-informativo {
+    font-size: 0.5rem;
+    line-height: 0.55rem;
+    margin-left: -48%;
+    width: 230%;
+    }
+    .h1-bottom{
+        margin-left: -48%;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
 }

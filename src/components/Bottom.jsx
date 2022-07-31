@@ -5,7 +5,7 @@ export default function Bottom(){
     return(
         <>
         <div className="bottom">
-            <h1 className='text-2xl font-semibold'>SÓ QUEM VENDE CURTE AS <br /> EXPERIÊNCIAS MAIS DIFERENTONAS!</h1>
+            <h1 className='h1-bottom text-2xl font-semibold'>SÓ QUEM VENDE CURTE AS <br /> EXPERIÊNCIAS MAIS DIFERENTONAS!</h1>
             <br />
             <div className='texto-informativo'>
                 <p>*Campanha válida de 01/02 a 31/03/2020. Vendas via Business Center e para o

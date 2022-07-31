@@ -1,14 +1,15 @@
+import '../styles/Login.css'
+
 export default function Login(props) {
     return (
         <div>
-
-            <form>
+            <form className="login-form">
                 <div>
                     <h1 className='tabela-topo text-center font-extrabold text-3xl mb-5'>LOGIN</h1>
                     <table>
                         <tbody>
                             <tr>
-                                <td><p className='texto-input'>
+                                <td><p className='login-input'>
                                     <span className='text-sm'>CPF</span>
                                     <input
                                         type='text'
@@ -24,7 +25,7 @@ export default function Login(props) {
                             </tr>
                             <tr>
                                 <td>
-                                    <p className='texto-input'>
+                                    <p className='login-input'>
                                         <span className='text-sm'>Senha</span>
                                         <input
                                             className='inserir'

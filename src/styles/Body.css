@@ -22,8 +22,14 @@
 
 }
 
-@media screen and (max-height: 500px) {
+@media (max-height: 500px) {
   .body-header{
       min-height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .body-header{
+      min-height: 200px;
+      height: 60vh;
   }
 }
