@@ -15,5 +15,5 @@ e enviado para outra homepage.
 
 <hr />
 
-<h3> como forma de agilizar o processo, ja disponibilizarei uma branch aqui no GitHub com a página final hospedada.</h3>
+<h3> como forma de agilizar o processo, ja disponibilizarei uma branch aqui no GitHub com a página final hospedada no link abaixo:</h3>
 <h1>https://github.com/davi38/atelie-frontend</h1>
