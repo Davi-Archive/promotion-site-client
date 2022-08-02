@@ -32,7 +32,7 @@ export default function Formulario() {
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            let res = await fetch("https://api.teste-frontend.ateliedepropaganda.com.br/v1/register", {
+            let res = await fetch("https://80c1f3e7-488c-43af-8aef-6e54e14c82e6.mock.pstmn.io", {
                 method: "POST",
                 body: JSON.stringify({
                     name: name,
