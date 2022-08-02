@@ -7,15 +7,17 @@
 
 .botao-e-logo{
     margin-left: 20%;
-    margin-right: -5%;
+    margin-right: -2%;
 }
 
 .imagem-mundo{
     display: flex;
-    margin-top: 7%;
-    width: 680px;
-    height: 580px;
+    margin-top: 10%;
+    width: 640px;
+    height: 550px;
     z-index: 1;
+    background-size: contain;
+    background-image: url('../assets/clouds.png');
 }
 
 .texto-campanha{
@@ -23,7 +25,6 @@
     width: 250px;
     margin-top: 40%;
     margin-right: -30%;
-
 }
 
 .botoes-campanha{

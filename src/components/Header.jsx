@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Header.css'
-import imagemMundo from '../assets/clouds.png'
 import LogoTexto from './LogoTexto'
 
 export default function Header(props) {
@@ -16,7 +15,7 @@ export default function Header(props) {
                 </div>
             </div>
             <div className='logo-campanha'>
-                <img className='imagem-mundo' src={imagemMundo} alt='Foto de pessoas em um planeta'></img>
+                <div className='imagem-mundo'></div>
             </div>
             </div>
         </>
