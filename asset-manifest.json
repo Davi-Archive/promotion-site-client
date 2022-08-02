@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atelie-frontend/static/css/main.04bec54e.css",
-    "main.js": "/atelie-frontend/static/js/main.8a331990.js",
+    "main.js": "/atelie-frontend/static/js/main.178b07a1.js",
     "static/js/787.c7869a7e.chunk.js": "/atelie-frontend/static/js/787.c7869a7e.chunk.js",
     "static/media/background-marrom.png": "/atelie-frontend/static/media/background-marrom.a9aaa6f332ce92834856.png",
     "static/media/clouds.png": "/atelie-frontend/static/media/clouds.88d7a71b005c8e33ac5e.png",
@@ -13,11 +13,11 @@
     "static/media/close.svg": "/atelie-frontend/static/media/close.5a9b87277912962c17aa6c1bf2b21502.svg",
     "index.html": "/atelie-frontend/index.html",
     "main.04bec54e.css.map": "/atelie-frontend/static/css/main.04bec54e.css.map",
-    "main.8a331990.js.map": "/atelie-frontend/static/js/main.8a331990.js.map",
+    "main.178b07a1.js.map": "/atelie-frontend/static/js/main.178b07a1.js.map",
     "787.c7869a7e.chunk.js.map": "/atelie-frontend/static/js/787.c7869a7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04bec54e.css",
-    "static/js/main.8a331990.js"
+    "static/js/main.178b07a1.js"
   ]
 }
