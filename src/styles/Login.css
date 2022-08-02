@@ -1,35 +1,35 @@
 .login-form {
-    display: inline-flex;
-    width: 40%;
+    display: flex;
+    width: 50%;
     align-items: center;
-    margin-left: 35%;
+    margin-top: 3%;
+    margin-left: 20%;
     color: #fff;
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 5%;
+    justify-content: center;
 }
 
 .login-input{
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 400px;
+    width: 200%;
 }
 
-@media (max-width: 400px){
+.login-topo,
+.botao-login{
+    margin-left: 70%;
+}
+
+@media screen and (max-width: 480px) {
     .login-form {
-        display: inline-flex;
-        width: 40%;
-        align-items: center;
-        margin-left: 35%;
-        color: #fff;
-        font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: left;
+        margin-left: 0%;
         padding-bottom: 5%;
     }
-
     .login-input{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 100px;
+        margin-left: 6%;
+        width: 170%;
     }
 }

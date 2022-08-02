@@ -1,15 +1,13 @@
-.formulario-form {
+.formulario-main{
     display: flex;
-    width: 80%;
     align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 35%;
     color: #fff;
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 5%;
-}
-
-table {
-    width: 70%;
 }
 
 .botao-enviar {
@@ -25,10 +23,6 @@ table {
 
 .tabela-descricao {
     font-size: 0.9rem;
-}
-
-table {
-    width: 100%;
 }
 
 th, td {
@@ -90,51 +84,11 @@ th, td {
 }
 
 
-/*  media query's */
-
-@media (max-height: 600px) {
-    form{
-        min-height: 200px;
-        height: 60vh;
-    }
-}
-
-@media (max-width: 400px) {
-    form{
+@media screen and (max-width: 540px) {
+    .formulario-main{
         align-items: left;
-        margin-left: -50%;
-    }
-    table {
-        margin-left: -38%;
-        flex-wrap: wrap;
-        font-size: 0.55rem;
-    }
-    .texto-cpf{
-       font-size: 0.55rem;
-    }
-    .tabela-topo {
-        font-size: 0.8em;
-        margin-left: -35%;
-        text-align: left;
-    }
-    .tabela-descricao {
-        margin-left: -35%;
-        font-size: 0.6rem;
-        text-align: left;
-    }
-}
-
-
-@media (max-width: 600px) {
-    form{
-        align-items: left;
-        margin-left: -40%;
-
-    }
-}
-@media (max-width: 69em) {
-    form{
-        align-items: center;
-        margin-left: 27%;
+        width: 10%;
+        font-size: 0.8rem;
+        margin-left: 0;
     }
 }

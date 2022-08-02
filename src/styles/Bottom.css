@@ -1,25 +1,31 @@
 .bottom {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: left; */
+    display: inline-flex;
+    flex-direction: row;
     justify-content: justify;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-left: 20%;
     color: #4e4e4e;
-    width: 60%;
+    width: 100%;
+    height: 300px;
+    background-image: url('../assets/background-cinza.png');
 
 }
 
 .bottom-logo {
-    flex-direction: row;
-    display: flex;
-    margin-top: -15%;
-    margin-left: 63%;
-    width: 180px;
+    display: inline-flex;
+    width: 210px;
+    margin-left: -40%;
+    margin-top: -5%;
 }
 
+.texto-logo{
+    width: 100%;
+
+}
 .texto-informativo {
+    display: flex;
     text-align-last: justify;
+    width: 50%;
 }
 
 .texto-informativo,
@@ -29,23 +35,30 @@
     line-height: 0.8rem;
 }
 
-@media (max-width: 38em) {
+
+@media screen and (max-width: 540px) {
+    .bottom{
+    display: flex;
+    justify-content: justify;
+    padding-top: 4%;
+    padding-left: 1%;
+    color: #4e4e4e;
+    width: 100%;
+    height: 300px;
+    }
     .bottom-logo {
-        display: flex;
-        margin-top: -4%;
-        margin-left: 3%;
-        width: 180px;
+        display: none;
     }
-    .texto-informativo,
-    .last-texto-informativo {
-    font-size: 0.5rem;
-    line-height: 0.55rem;
-    margin-left: -48%;
-    width: 230%;
+    .texto-informativo {
+        display: inline;
+        text-align-last: left;
+        width: 100%;
     }
-    .h1-bottom{
-        margin-left: -48%;
-        font-size: 1rem;
-        line-height: 1rem;
+
+}
+
+@media screen and (max-width: 900px) {
+    .bottom-logo {
+        display: none;
     }
 }

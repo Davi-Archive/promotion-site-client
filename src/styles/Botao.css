@@ -15,12 +15,3 @@
     color: black;
     background-color: brown;
 }
-
-@media (max-width: 38em) {
-    .botao-campanha{
-        width: 5rem;
-        font-size: 0.6rem;
-        padding: 1px;
-        border: 1px;
-    }
-}

@@ -5,7 +5,7 @@ export default function Login(props) {
         <div>
             <form className="login-form">
                 <div>
-                    <h1 className='tabela-topo text-center font-extrabold text-3xl mb-5'>LOGIN</h1>
+                    <h1 className='login-topo font-extrabold text-3xl'>LOGIN</h1>
                     <table>
                         <tbody>
                             <tr>
@@ -39,7 +39,9 @@ export default function Login(props) {
                             </tr>
                             <tr>
                                 <th colSpan='2'>
-                                    {props.children}
+                                    <div className='botao-login'>
+                                        {props.children}
+                                    </div>
                                 </th>
                             </tr>
                         </tbody>

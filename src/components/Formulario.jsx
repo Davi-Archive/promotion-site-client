@@ -79,7 +79,7 @@ export default function Formulario() {
     }
 
     return (
-        <div>
+        <div className='formulario-main'>
             <form onSubmit={handleSubmit} className='formulario-form'>
                 <div>
                     <h1 className='tabela-topo text-center font-extrabold text-3xl mb-5'>CADASTRE-SE</h1>

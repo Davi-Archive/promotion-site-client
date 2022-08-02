@@ -10,44 +10,45 @@ import Botao from './components/Botao';
 export default function Main() {
 
   //renderiza seletivamente entre login(false) e formulario(false)
-  let [visivel, setVisivel] = useState({visivel: true})
+  let [visivel, setVisivel] = useState({ visivel: true })
 
-   function loginForm() {
+  function loginForm() {
     setVisivel(true)
   }
   function formulario() {
     setVisivel(false)
   }
-  function entrarLogin(){    //para função de login ser implementada consultando banco de dados.
+  function entrarLogin() {    //para função de login ser implementada consultando banco de dados.
     setVisivel(false)
   }
 
 
   return (
-
-    <>
-    <div className="body-header">
-    <Header>
-        <Botao texto='LOGIN' onClick={() => loginForm()} cor='600'></Botao>
-        <Botao texto='CADASTRE-SE' onClick={() => formulario()} cor='600'></Botao>
-    </Header>
-    </div>
-    <div className='body-main'>
-     {visivel === true ? (
-      <Login>
-         <Botao texto='ENTRAR' onClick={() => entrarLogin()} type='submit' cor='a500'></Botao>
-      </Login>
-      ) : (
-     <Formulario></Formulario>
-      )
-     }
-    </div>
-    <div className='body-bottom'>
-      <Bottom></Bottom>
-    </div>
-    <footer>
-      <Footer></Footer>
-    </footer>
+    <div className='body'>
+        <>
+        <div className="body-header">
+          <Header>
+            <Botao texto='LOGIN' onClick={() => loginForm()} cor='600'></Botao>
+            <Botao texto='CADASTRE-SE' onClick={() => formulario()} cor='600'></Botao>
+          </Header>
+        </div>
+        <div className='body-main'>
+          {visivel === true ? (
+            <Login>
+              <Botao texto='ENTRAR' onClick={() => entrarLogin()} type='submit' cor='a500'></Botao>
+            </Login>
+          ) : (
+            <Formulario></Formulario>
+          )
+          }
+        </div>
+        <div className='body-bottom'>
+          <Bottom></Bottom>
+        </div>
+        <footer>
+          <Footer></Footer>
+        </footer>
     </>
+      </div>
   );
 }

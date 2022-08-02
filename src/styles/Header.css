@@ -1,62 +1,86 @@
+.full-header{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+}
+
+.botao-e-logo{
+    margin-left: 20%;
+    margin-right: -5%;
+}
+
 .imagem-mundo{
-    position: absolute;
-    top: 5%;
-    left: 38%;
-    width: 37em;
-    height: auto;
-    z-index: 0;
+    display: flex;
+    margin-top: 7%;
+    width: 680px;
+    height: 580px;
+    z-index: 1;
 }
 
 .texto-campanha{
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 220px;
-    height: auto;
+    display: flex;
+    width: 250px;
+    margin-top: 40%;
+    margin-right: -30%;
+
 }
 
 .botoes-campanha{
-    position: absolute;
     display: flex;
-    bottom: -5%;
+    flex-direction: row;
     align-items: center;
     text-align: center;
 }
 
-@media (max-height: 38em) {
-    .imagem-mundo{
-        top: 0%;
-        width: 400px;
-        height: -10%;
+@media screen and (max-width: 480px) {
+    .full-header{
+        width: 40%;
+    }
+    .botao-e-logo {
+      margin-top: 10%;
+    }
+    .botoes-campanha{
+        padding-left: 0%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
     }
     .texto-campanha{
-        top: 5%;
-        width: 220px;
-
+        margin-bottom: -20%;
     }
+    .imagem-mundo{
+        display: none;
+    }
+
 }
 
-@media (max-width: 38em) {
-    .imagem-mundo{
-        z-index: -1;
-    }
-    .texto-campanha{
-        top:-14%;
-        left: 0%;
-        width: 14em;
-        height: auto;
-    }
+@media screen and (max-width: 700px) {
+    .botao-e-logo {
+        margin-left: 5%;
+        margin-top: 10%;
+      }
+      .texto-campanha{
+          margin-bottom: -20%;
+      }
+      .imagem-mundo{
+          display: none;
+      }
 }
-@media (max-width: 69em) {
-    .imagem-mundo{
-        top: 0%;
-        left: 40%;
-        width: 37em;
-        height: auto;
-    }
-    .texto-campanha{
-        left: 5%;
-        width: 180px;
-        height: auto;
-    }
+@media screen and (max-width: 900px) {
+    .botao-e-logo {
+        margin-left: 35%;
+        margin-top: 0%;
+      }
+      .botoes-campanha{
+          padding-top: 5%;
+          padding-left: 0%;
+      }
+      .texto-campanha{
+          margin-bottom: -20%;
+          margin-top: -30%;
+      }
+      .imagem-mundo{
+          display: none;
+      }
 }
