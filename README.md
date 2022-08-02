@@ -1,4 +1,4 @@
-# Este projeto foi feito usando Reactjs, tailwindcss entre outros 
+# Este projeto foi feito usando Reactjs, tailwindcss, HTML, SASS entre outros. 
 # <p> DEMO: https://davi38.github.io/atelie-frontend/</p>
 
 ###
