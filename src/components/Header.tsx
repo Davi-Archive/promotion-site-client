@@ -1,8 +1,12 @@
 import React from 'react'
-import '../styles/Header.css'
+import '../styles/Header.scss'
 import LogoTexto from './LogoTexto'
 
-export default function Header(props) {
+interface HeaderInt{
+    children: any,
+}
+
+export default function Header(props:HeaderInt) {
     return (
         <>
             <div className='full-header'>

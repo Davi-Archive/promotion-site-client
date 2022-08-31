@@ -1,6 +1,8 @@
-import close from '../assets/close.svg'
+import React from 'react';
 
-export default function Dialog({ onDialog, mensagem }) {
+
+export default function Dialog({ onDialog, mensagem }:(any)) {
+  const logo = require("../assets/close.svg") as string;  //require typescript
     return (
       <div
         style={{
@@ -59,7 +61,7 @@ export default function Dialog({ onDialog, mensagem }) {
                 minHeight: "20px",
               }}
             >
-              <img src={close.toString()} width='20px' alt='X'></img>
+              <img src={logo} width='20px' alt='X'></img>
 
             </button>
           </div>

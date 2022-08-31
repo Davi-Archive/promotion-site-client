@@ -1,6 +1,6 @@
-import '../styles/Login.css'
+import '../styles/Login.scss'
 
-export default function Login(props) {
+export default function Login(props: (any)) {
     return (
         <div>
             <form className="login-form">
@@ -16,8 +16,8 @@ export default function Login(props) {
                                         className='inserir'
                                         placeholder='000.000.000-00'
                                         pattern='\d{3}\.?\d{3}\.?\d{3}-?\d{2}'
-                                        maxLength="14"
-                                        minLength="11"
+                                        maxLength={14}
+                                        minLength={11}
                                         required
                                     ></input>
                                 </p>
@@ -31,14 +31,14 @@ export default function Login(props) {
                                             className='inserir'
                                             placeholder='Senha'
                                             type="password"
-                                            minLength='8'
-                                            maxLength='50'
+                                            minLength={8}
+                                            maxLength={50}
                                             required
                                         ></input></p>
                                 </td>
                             </tr>
                             <tr>
-                                <th colSpan='2'>
+                                <th colSpan={2}>
                                     <div className='botao-login'>
                                         {props.children}
                                     </div>

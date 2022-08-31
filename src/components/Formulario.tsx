@@ -1,4 +1,4 @@
-import '../styles/Formulario.css'
+import '../styles/Formulario.scss'
 import React, { useState } from 'react';
 import Botao from './Botao';
 import Dialog from './Dialog';
@@ -11,7 +11,7 @@ export default function Formulario() {
         isLoading: false,
     });
 
-    const handleDialog = (isLoading) => {
+    const handleDialog = (isLoading:any) => {
         setDialog({
             isLoading,
         });
@@ -29,7 +29,7 @@ export default function Formulario() {
     const [message, setMessage] = useState("");
 
 
-    let handleSubmit = async (e) => {
+    let handleSubmit = async (e:any) => {
         e.preventDefault();
         try {
             let res = await fetch("https://80c1f3e7-488c-43af-8aef-6e54e14c82e6.mock.pstmn.io", {
@@ -74,7 +74,7 @@ export default function Formulario() {
 
     //atualiza o select
 
-    function segmentChange(e) {
+    function segmentChange(e: any) {
         setSegment(e.target.value);
     }
 
@@ -89,14 +89,14 @@ export default function Formulario() {
                     <table>
                         <tbody>
                             <tr>
-                                <td colSpan='2'>
+                                <td colSpan={2}>
                                     <p className='texto-input'>
                                         <span className='text-sm'>Nome </span>
                                         <input
                                             onChange={(e) => setName(e.target.value)}
                                             className='inserir'
                                             placeholder='Nome'
-                                            maxLength="150"
+                                            maxLength={150}
                                             required
                                         ></input>
                                     </p>
@@ -112,8 +112,8 @@ export default function Formulario() {
                                         className='inserir-cpf inserir'
                                         placeholder='000.000.000-00'
                                         pattern='\d{3}\.?\d{3}\.?\d{3}-?\d{2}'
-                                        maxLength="14"
-                                        minLength="11"
+                                        maxLength={14}
+                                        minLength={11}
                                         required
                                     ></input>
                                 </p>
@@ -128,7 +128,7 @@ export default function Formulario() {
                                             className='inserir'
                                             placeholder='E-mail'
                                             type='email'
-                                            maxLength="200"
+                                            maxLength={200}
                                             required
                                         ></input></p>
                                     <p className='text-xs'>&nbsp;</p>
@@ -144,8 +144,8 @@ export default function Formulario() {
                                             className='inserir'
                                             placeholder='Senha'
                                             type="password"
-                                            minLength='6'
-                                            maxLength='50'
+                                            minLength={6}
+                                            maxLength={50}
                                             required
                                         ></input></p>
                                 </td>
@@ -158,8 +158,8 @@ export default function Formulario() {
                                             className='inserir'
                                             placeholder='Confirme sua Senha'
                                             type='password'
-                                            minLength='6'
-                                            maxLength='50'
+                                            minLength={6}
+                                            maxLength={50}
                                             required
                                         ></input>
                                     </p>
@@ -174,7 +174,7 @@ export default function Formulario() {
                                             className='inserir'
                                             placeholder='Empresa'
                                             type='text'
-                                            maxLength="150"
+                                            maxLength={150}
                                             required
                                         ></input>
                                     </p>
@@ -195,7 +195,7 @@ export default function Formulario() {
                                 </td>
                             </tr>
                             <tr>
-                                <th colSpan='2'>
+                                <th colSpan={2}>
                                     <Botao texto='ENVIAR' type='submit' cor='500'></Botao>
                                 </th>
                             </tr>

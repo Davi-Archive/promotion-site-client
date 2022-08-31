@@ -1,4 +1,4 @@
-import '../styles/Bottom.css'
+import '../styles/Bottom.scss'
 import Logo from './Logo'
 
 export default function Bottom() {

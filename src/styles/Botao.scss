@@ -1,0 +1,16 @@
+.botao-campanha {
+	width: 7rem;
+	text-align: center;
+	line-height: 37px;
+	font-size: 0.9rem;
+	font-family: 'Lato-Bold' ,Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	&:hover {
+		color: black;
+		background-color: brown;
+	}
+	&:focus {
+		color: black;
+		background-color: brown;
+	}
+}

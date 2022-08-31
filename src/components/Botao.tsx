@@ -1,9 +1,15 @@
 import React from "react"
-import '../styles/Botao.css'
+import '../styles/Botao.scss'
 
+interface BotaoProps{
+    texto:string,
+    onClick?: any,
+    type?:any,
+    cor:any,
+}
 
-export default function Botao(props){
-    const colorNumber = (props.cor === (600)) ? 600 : 500
+export default function Botao({texto, onClick, type, cor}:BotaoProps){
+    const colorNumber = (cor === (600)) ? 600 : 500
     return (
         <div className={`
         botao-campanha
@@ -18,7 +24,7 @@ export default function Botao(props){
         justify-center
         text-center
         `}>
-        <button onClick={props.onClick} type={props.type}>{props.texto}</button>
+        <button onClick={onClick} type={type}>{texto}</button>
         </div>
     )
 }
