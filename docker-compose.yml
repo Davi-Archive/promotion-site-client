@@ -4,7 +4,7 @@ services:
   # Serviço que irá rodar o node
   app:
     # Imagem base do container
-    image: node:19
+    image: promotion-site-client
     # Nome do container para facilitar execução
     container_name: promotion-site-client
     # Mesmo que `docker run -t`
